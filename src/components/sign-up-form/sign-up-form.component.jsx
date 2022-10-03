@@ -59,26 +59,28 @@ const SignUpForm = () => {
             <h2>Dont have an account?</h2>
             <span>Sign up with your email and password</span>
             <form onSubmit={handleSubmit}>
-               <FormInput
-                label="Display Name"
+                <FormInput
+                    label="Display Name"
 
-               type='text' required 
-               onChange={handleChange} 
-               name="displayName"
-                value={displayName} />
-               
+                    type='text' required
+                    onChange={handleChange}
+                    name="displayName"
+                    value={displayName} />
+
                 {/* ugyanaz a name legyen mint a formfieldben */}
 
-                <FormInput 
-                  label='Email' required onChange={handleChange} name="email" value={email} />
-               
-               <FormInput
-                
-                label="Password" type='password' required onChange={handleChange} name="password" value={password} />
+                <FormInput
+                    label='Email' required onChange={handleChange} name="email" value={email} />
 
-               <FormInput
-                label="Confirm Password" type='password' required onChange={handleChange} name="confirmPassword" value={confirmPassword} />
-                <Button type="submit">Sign up</Button>
+                <FormInput
+
+                    label="Password" type='password' required onChange={handleChange} name="password" value={password} />
+
+                <FormInput
+                    label="Confirm Password" type='password' required onChange={handleChange} name="confirmPassword" value={confirmPassword} />
+                <Button
+                    buttontype='default'
+                    type="submit">Sign up</Button>
             </form>
         </div>
     )
